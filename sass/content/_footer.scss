@@ -1,0 +1,10 @@
+@use '../variables';
+@use 'sass:math';
+
+// Footer
+.footer {
+    text-align: center;
+    padding: calc(variables.$espacamento-md * 1.25);
+    background-color: #0f172a;
+    color: variables.$cor-branca;
+}

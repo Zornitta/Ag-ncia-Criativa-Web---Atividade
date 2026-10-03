@@ -1,0 +1,27 @@
+@use 'variables';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    color: variables.$cor-texto;
+    line-height: 1.6;
+    font-size: 16px;
+    background-color: variables.$cor-fundo;
+    overflow-x: hidden;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: variables.$espacamento-md;
+    color: variables.$cor-secundaria;
+}
+
+section {
+    padding: variables.$espacamento-lg;
+}

@@ -1,0 +1,28 @@
+@use '../../variables';
+
+/* Depoimentos (Grid) */
+.depoimentos {
+
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: variables.$espacamento-md;
+    }
+}
+
+.depoimento {
+    background-color: variables.$cor-branca;
+    padding: variables.$espacamento-md;
+    border-left: 5px solid variables.$cor-primaria;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+
+    &__text {
+        font-style: italic;
+        margin-bottom: variables.$espacamento-sm;
+    }
+
+    &__autor {
+        font-weight: bold;
+        color: variables.$cor-secundaria;
+    }
+}

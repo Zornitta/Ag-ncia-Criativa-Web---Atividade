@@ -1,0 +1,24 @@
+@use '../../variables';
+
+// Sobre Nós
+.sobre {
+
+    &__container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: variables.$espacamento-md;
+        align-items: center;
+
+        &__texto {
+            flex: 1 1 300px;
+        }
+
+        &__imagem {
+            flex: 1 1 300px;
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+    }
+}

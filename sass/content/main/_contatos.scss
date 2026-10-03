@@ -1,0 +1,42 @@
+@use '../../variables';
+@use '../../mixins';
+
+// Contatos
+.contato {
+    background-color: variables.$cor-branca;
+
+    &__container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: variables.$espacamento-lg;
+    }
+}
+
+.info-contato, .formulario {
+    flex: 1 1 300px;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: variables.$espacamento-sm;
+
+    &__button {
+        @include mixins.estilo-botao; 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin-top: 1rem;
+    }
+}
+
+.formulario {
+
+    &__input {
+        @include mixins.formulario-inputs;
+    }
+    &__textarea {
+        @include mixins.formulario-inputs;
+    }
+}

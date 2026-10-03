@@ -1,0 +1,14 @@
+//root
+@use 'base';
+@use 'variables';
+@use 'mixins';
+
+//content
+@use 'content/header';
+@use 'content/main/hero';
+@use 'content/main/about';
+@use 'content/main/servicos';
+@use 'content/main/depoimentos';
+@use 'content/main/contatos';
+@use 'content/footer';
+

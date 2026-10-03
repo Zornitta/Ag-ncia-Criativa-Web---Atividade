@@ -1,0 +1,27 @@
+@use 'variables';
+
+// Botao Header e Formulario
+@mixin estilo-botao($cor-fundo: #0ea5e9, $cor-texto: #ffffff) {
+    background-color: $cor-fundo;
+    color: $cor-texto;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+
+    &:hover {
+        background-color: darken($cor-fundo, 10%);
+        transform: translateY(-2px);
+    }
+}
+
+@mixin formulario-inputs {
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid #cbd5e1;
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: 1rem;
+}

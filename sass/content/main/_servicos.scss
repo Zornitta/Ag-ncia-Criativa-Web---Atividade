@@ -1,0 +1,28 @@
+@use '../../variables';
+
+
+// Serviços
+.servicos {
+    background-color: variables.$cor-branca;
+
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: variables.$espacamento-md;
+    }
+}
+
+
+// Cards
+.card {
+    background-color: variables.$cor-fundo;
+    padding: variables.$espacamento-md;
+    border-radius: 8px;
+    text-align: center;
+    border: 1px solid #e2e8f0;
+    transition: transform 0.3s;
+
+    &:hover {
+        transform: translateY(-5px);
+    }
+}

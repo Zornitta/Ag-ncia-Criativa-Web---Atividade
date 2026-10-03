@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agência Criativa Web</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <span class="header__logo">Criativa Web</span>
+        <button class="header__button" id="menu-btn" aria-label="Abrir menu de navegação">☰</button>
+        <nav class="nav" id="nav-menu">
+            <ul class="nav__lista">
+                <li class="nav__item"><a class="nav__link" href="#home">Home</a></li>
+                <li class="nav__item"><a class="nav__link" href="#sobre">Sobre Nós</a></li>
+                <li class="nav__item"><a class="nav__link" href="#servicos">Serviços</a></li>
+                <li class="nav__item"><a class="nav__link" href="#depoimentos">Depoimentos</a></li>
+                <li class="nav__item"><a class="nav__link" href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+
+        <!-- MAIN/HERO -->
+        <section id="home" class="hero">
+            <div class="hero__content">
+                <h1 class="hero__content__title">Transformamos ideias em experiências digitais</h1>
+                <p class="hero__content__text">Design moderno, responsivo e focado em performance.</p>
+                <a class="hero__content__link" href="#contato">Fale Conosco</a>
+            </div>
+        </section>
+
+        <!-- MAIN/SOBRE-NÓS -->
+        <section id="sobre" class="sobre">
+            <div class="sobre__container">
+                <div class="sobre__texto">
+                    <h2 class="sobre__texto__title">Sobre Nós</h2>
+                    <p class="sobre__texto__description">Somos a Agência Criativa Web, apaixonados por criar soluções digitais inovadoras. Nosso diferencial é unir uma estética impecável com tecnologias web de ponta, garantindo que o seu negócio se destaque em qualquer dispositivo.</p>
+                </div>
+                <img 
+                    srcset="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=400 400w,
+                        https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800 800w"
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                    src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800" 
+                    alt="Equipe da Agência Criativa Web colaborando em um projeto"
+                    class="sobre__imagem__img">
+            </div>
+        </section>
+
+        <!-- MAIN/SERVICOS -->
+        <section id="servicos" class="servicos">
+            <h2>Nossos Serviços</h2>
+            <div class="servicos__grid">
+                <div class="card">
+                    <h3 class="card__title">Design UI/UX</h3>
+                    <p class="card__text">Interfaces intuitivas, responsivas e centradas na experiência do usuário.</p>
+                </div>
+                <div class="card">
+                    <h3 class="card__title">Desenvolvimento Web</h3>
+                    <p class="card__text">Sites rápidos e otimizados, utilizando as melhores práticas do mercado.</p>
+                </div>
+                <div class="card">
+                    <h3 class="card__title">Identidade Visual</h3>
+                    <p class="card__text">Construção de marcas fortes que se conectam com o seu público-alvo.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- MAIN/DEPOIMENTOS -->
+        <section id="depoimentos" class="depoimentos">
+            <h2 class="depoimentos__title">O que dizem nossos clientes</h2>
+            <div class="depoimentos__grid">
+                <div class="depoimento">
+                    <p class="depoimento__text">"O novo site desenvolvido pela Criativa Web triplicou nossas conversões. Trabalho excepcional!"</p>
+                    <span class="depoimento__autor">Marcos Silva, CEO da TechStart</span>
+                </div>
+                <div class="depoimento">
+                    <p class="depoimento__text">"Equipe ágil e layout perfeito. O site funciona incrivelmente bem tanto no PC quanto no celular."</p>
+                    <span class="depoimento__autor">- Ana Costa, Diretora de Marketing</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- MAIN/CONTATOS -->
+        <section id="contato" class="contato">
+            <h2 class="contato__title">Contato</h2>
+            <div class="contato__container">
+                <div class="info-contato">
+                    <p class="info-contato__text"><strong>Endereço:</strong> Rua Mariano Procópio, 123 - Centro</p>
+                    <p class="info-contato__text"><strong>Telefone:</strong> (11) 99999-9999</p>
+                    <p class="info-contato__text"><strong>E-mail:</strong> contato@criativaweb.com</p>
+                </div>
+                <form class="formulario" id="form-contato">
+                    <input class="formulario__input" type="text" placeholder="Seu Nome" required>
+                    <input class="formulario__input" type="email" placeholder="Seu E-mail" required>
+                    <textarea class="formulario__textarea" placeholder="Sua Mensagem" rows="5" required></textarea>
+                    <button class="formulario__button" type="submit">Enviar Mensagem</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>&copy; 2026 Agência Criativa Web. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- JS -->
+    <script src="./js/app.js"></script>
+</body>
+</html>
